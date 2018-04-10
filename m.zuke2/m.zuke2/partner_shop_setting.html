@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta name="format-detection" content="telephone=no" />
+    <title>【租客网】,租客深圳租房_租房网_深圳租房信息_房屋托管</title>
+    <link rel="stylesheet" type="text/css" href="css/common/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/views/public.css" />
+    <link rel="stylesheet" type="text/css" href="css/plugins/layer.css" />
+</head>
+
+<body class="partner_shop info release details pt37">
+    <!-- 头部 -->
+    <div class="top-fixed bg-fff flex align-items-center bb-ddd">
+        <a href="javascript:history.go(-1)" class="return-icon ml15"></a>
+        <span class="f16 c-333 absolute translateHalf">店铺设置</span>
+    </div>
+    <ul class="ul-list">
+        <li class="bb-eee">
+            <a class="avatar-box">
+                <span class="f14 c-333">店铺头像</span>
+                <span class="flex flex-right align-items-center">
+                    <span class="avatar"><img src="images/default-avatar.png" alt="头像"></span>
+                    <span class="next"></span>
+                </span>
+                <input type="file" name="avatar">
+            </a>
+        </li>
+        <li class="bb-eee">
+            <span class="f14 c-333">店铺名称</span>
+                <span class="flex flex-right align-items-center">
+                <input type="text" class="tright shop-name" value="houniao" />
+            </span>
+        </li>
+    </ul>
+    <p class="f14 c-333 plr12 ptb12">店铺形象</p>
+    <!-- 经纪人店铺banner 如果上传了就显示，没上传就不显示 -->
+    <div class="banner hide"><img src="" alt="经纪人店铺banner"></div>
+    <div class="pt12 hide">
+        <button class="replace-bg flex-right">更换形象</button>
+    </div>
+    <!-- big-upload -->
+    <div class="main plr12 ptb12 bb-eee big-upload">
+        <input type="file" accept="image/*" />
+    </div>
+    <p class="f14 c-333 plr12 pt12">店铺简介</p>
+    <div class="main plr12 ptb12">
+        <textarea class="shop-desc" placeholder="请输入店铺简介" name="shop-desc" data-maxword="200"></textarea>
+        <p class="f12 c-999"><span class="shengyu">0</span><span>/200</span></p>
+    </div>
+    <button class="submit mt12">确定</button>
+    <!-- 裁剪 -->
+    <div class="clip-pop bg-fff wh100 pt37 pop hide">
+        <div class="top-fixed flex align-items-center">
+            <div class="cross-bed-icon ml15 close-clip"></div>
+            <span class="f16 c-fff absolute translateHalf">裁剪</span>
+            <i class="flex-right icon confirm mr13"></i>
+        </div>
+        <div id="clipArea" class="clip-area"></div>
+    </div>
+    <!-- 店铺名称 -->
+    <div class="shop-name-pop pop wh100 bg-fff pt37 hide">
+        <div class="top-fixed bg-fff flex align-items-center bb-ddd">
+            <div class="return-icon ml15 close-shop-name"></div>
+            <span class="f16 c-333 absolute translateHalf">用户名</span>
+            <span class="f14 c-333 flex-right mr13 white-space-normal save-shop-name cursor-pointer">保存</span>
+        </div>
+        <p class="input-box">
+            <input type="text" placeholder="请输入用户名" />
+        </p>
+    </div>
+    <script type="text/javascript" src="js/libs/jquery.min.js"></script>
+    <script type="text/javascript" src="js/common/common.js"></script>
+    <script type="text/javascript" src="js/plugins/layer.js"></script>
+    <script type="text/javascript" src="js/plugins/hammer.min.js"></script>
+    <script type="text/javascript" src="js/plugins/iscroll-zoom-min.js"></script>
+    <script type="text/javascript" src="js/plugins/lrz.all.bundle.min.js"></script>
+    <script type="text/javascript" src="js/plugins/photoClip.min.js"></script>
+    <script type="text/javascript" src="js/views/partner_shop_setting.js"></script>
+</body>
+
+</html>

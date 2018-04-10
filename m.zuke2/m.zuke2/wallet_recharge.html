@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta name="format-detection" content="telephone=no" />
+    <title>【租客网】,租客深圳租房_租房网_深圳租房信息_房屋托管</title>
+    <link rel="stylesheet" type="text/css" href="css/common/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/views/public.css" />
+    <link rel="stylesheet" type="text/css" href="css/plugins/layer.css" />
+</head>
+
+<body class="wallet recharge pt37 pb40">
+    <!-- 头部 -->
+    <div class="top-fixed bg-fff flex align-items-center bb-ddd">
+        <a href="javascript:history.go(-1)" class="return-icon ml15"></a>
+        <span class="f16 c-333 absolute translateHalf">充值</span>
+    </div>
+    <p class="f12 c-999 plr12 pt12">请输入充值金额</p>
+    <div class="money-input-box">
+        <span>￥</span>
+        <input class="recharge-num" type="number" maxlength="9" />
+    </div>
+    <p class="f12 c-999 plr12 ptb12">请选择支付方式</p>
+    <ul class="ul-list plr12">
+        <li class="bb-eee bt-eee">
+            <i class="pay-method-icon wallet-wechat-icon"></i>
+            <span class="f14 c-333">微信支付</span>
+            <span class="radio-box flex-right">
+                <input type="radio" id="wechatpay" name="pay-method">
+                <label for="wechatpay"></label>
+            </span>
+        </li>
+        <li class="bb-eee">
+            <i class="pay-method-icon wallet-alipay-icon"></i>
+            <span class="f14 c-333">支付宝支付</span>
+            <span class="radio-box flex-right">
+                <input type="radio" id="alipay" name="pay-method">
+                <label for="alipay"></label>
+            </span>
+        </li>
+    </ul>
+    <button class="wallet-btn">确定</button>
+    <script type="text/javascript" src="js/libs/jquery.min.js"></script>
+    <script type="text/javascript" src="js/plugins/layer.js"></script>
+    <script type="text/javascript" src="js/common/common.js"></script>
+    <script type="text/javascript" src="js/views/wallet_recharge.js"></script>
+</body>
+
+</html>

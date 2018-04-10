@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta name="format-detection" content="telephone=no" />
+    <title>【租客网】,租客深圳租房_租房网_深圳租房信息_房屋托管</title>
+    <link rel="stylesheet" type="text/css" href="css/common/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/plugins/layer.css" />
+    <link rel="stylesheet" type="text/css" href="css/views/public.css" />
+    <link rel="stylesheet" type="text/css" href="css/plugins/swiper.min.css" />
+</head>
+
+<body class="house_list qiuzu pt77">
+    <!-- 头部 -->
+    <div class="top-fixed bg-fff flex align-items-center bb-ddd">
+        <a href="javascript:history.go(-1)" class="return-icon ml15"></a>
+        <div class="absolute translateHalf subsection">
+            <a href="qiuzu_house_list.html" class="subsection-item">住宅</a>
+            <a href="qiuzu_office_list.html" class="subsection-item">写字楼</a>
+            <a class="subsection-item active">商铺</a>
+        </div>
+        <i class="icon search-deep-icon list-search-icon flex-right mr13"></i>
+    </div>
+    <!-- 搜索弹出 -->
+    <div class="search-fixed top-fixed bg-fff align-items-center bb-ddd hide">
+        <a href="javascript:history.go(-1)" class="return-icon ml15 close-search"></a>
+        <div class="long-search-box flex align-items-center ml25 bg-eee">
+            <input id="search" class="f12" type="text" placeholder="请输入搜索关键字" />
+            <span class="search-fade-icon ml8 search-btn"></span>
+        </div>
+        <span class="f14 c-333 flex-right mr13 search-hide white-space-normal">收起</span>
+    </div>
+    <!-- 筛选栏 -->
+    <div class="criteria-box flex bb-eee bg-fff">
+        <div class="criteria-item" name="area" data-active="0"><span>区域</span><i class="criteria-arrow-icon icon"></i></div>
+        <div class="criteria-pop maxh300 hide" name="area">
+            <div class="tabs bg-fff">
+                <ul>
+                    <li class="active" name="area-content">区域</li>
+                    <li name="metro-content">地铁</li>
+                </ul>
+            </div>
+            <div class="tab-content bg-f2f2f2 flex" name="area-content">
+                <div class="left-content" name="area-content">
+                    <ul>
+                        <li class="unlimited" data-param="district" data-district="">不限</li>
+                        <li data-param="district" data-district="1018">南山</li>
+                        <li data-param="district" data-district="1017">罗湖</li>
+                        <li data-param="district" data-district="1016">福田</li>
+                        <li data-param="district" data-district="1020">宝安</li>
+                    </ul>
+                </div>
+                <div class="right-content hide">
+                    <ul>
+                        <li data-param="region" data-region="">不限</li>
+                        <li data-param="region" data-region="10396">竹子林</li>
+                        <li data-param="region" data-region="10395">中心区</li>
+                        <li data-param="region" data-region="10397">车公庙</li>
+                        <li data-param="region" data-region="10398">福华新村</li>
+                        <li data-param="region" data-region="10399">福民新村</li>
+                        <li data-param="region" data-region="10400">福田区委</li>
+                        <li data-param="region" data-region="10401">岗厦</li>
+                        <li data-param="region" data-region="10402">购物公园</li>
+                        <li data-param="region" data-region="10403">皇岗</li>
+                        <li data-param="region" data-region="10404">华强北</li>
+                        <li data-param="region" data-region="10405">华强南</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tab-content bg-f2f2f2 hide" name="metro-content">
+                <div class="left-content">
+                    <ul>
+                        <li class="unlimited" data-param="line" data-line="">不限</li>
+                        <li data-param="line" data-line="1">一号线(罗宝线)</li>
+                        <li data-param="line" data-line="2">二号线(蛇口线)</li>
+                        <li data-param="line" data-line="3">三号线(龙岗线)</li>
+                        <li data-param="line" data-line="4">四号线(龙华线)</li>
+                        <li data-param="line" data-line="5">五号线(环中线)</li>
+                        <li data-param="line" data-line="7">七号线</li>
+                    </ul>
+                </div>
+                <div class="right-content hide">
+                    <ul>
+                        <li class="unlimited" data-param="station" data-station="">不限</li>
+                        <li data-param="station" data-station="10">罗湖</li>
+                        <li data-param="station" data-station="11">老街</li>
+                        <li data-param="station" data-station="12">国贸</li>
+                        <li data-param="station" data-station="13">大剧院</li>
+                        <li data-param="station" data-station="14">科学馆</li>
+                        <li data-param="station" data-station="15">华强北</li>
+                        <li data-param="station" data-station="16">深大</li>
+                        <li data-param="station" data-station="17">世界之窗</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="criteria-item" name="rent" data-active="0"><span>租金</span><i class="criteria-arrow-icon icon"></i></div>
+        <div class="criteria-pop maxh300 hide" name="rent">
+            <div class="content">
+                <ul>
+                    <li data-param="rent" data-rent="">不限</li>
+                    <li data-param="rent" data-rent="5000">5000元左右</li>
+                    <li data-param="rent" data-rent="8000">8000元左右</li>
+                    <li data-param="rent" data-rent="10000">10000元左右</li>
+                    <li data-param="rent" data-rent="15000">15000元左右</li>
+                    <li data-param="rent" data-rent="20000">20000元左右</li>
+                    <li data-param="rent" data-rent="25000">25000元左右</li>
+                    <li data-param="rent" data-rent="30000">30000元左右</li>
+                    <li data-param="rent" data-rent="40000">40000元左右</li>
+                    <li data-param="rent" data-rent="50000">50000元左右</li>
+                    <li data-param="rent" data-rent="60000">60000元左右</li>
+                </ul>
+            </div>
+            <div class="absolute price-range range flex align-items-center bg-fff">
+                <input class="rent double" type="text" placeholder="价格" />
+                <button class="price-range-btn">确定</button>
+            </div>
+        </div>
+        <div class="criteria-item" name="square" data-active="0"><span>面积</span><i class="criteria-arrow-icon icon"></i></div>
+        <div class="criteria-pop maxh300 hide" name="square">
+            <div class="content">
+                <ul>
+                    <li data-param="square" data-square="">不限</li>
+                    <li data-param="square" data-square="20">20m²左右</li>
+                    <li data-param="square" data-square="50">50m²左右</li>
+                    <li data-param="square" data-square="100">100m²左右</li>
+                    <li data-param="square" data-square="150">150m²左右</li>
+                    <li data-param="square" data-square="200">200m²左右</li>
+                    <li data-param="square" data-square="250">250m²左右</li>
+                    <li data-param="square" data-square="300">300m²左右</li>
+                    <li data-param="square" data-square="350">350m²左右</li>
+                    <li data-param="square" data-square="400">400m²左右</li>
+                    <li data-param="square" data-square="500">500m²左右</li>
+                </ul>
+            </div>
+            <div class="absolute square-range range flex align-items-center bg-fff">
+                <input class="square double" type="text" placeholder="面积" />
+                <button class="square-range-btn">确定</button>
+            </div>
+        </div>
+        <div class="criteria-item" name="characteristic" data-active="0"><span>特色</span><i class="criteria-arrow-icon icon"></i></div>
+        <div class="criteria-pop maxh300 hide" name="characteristic">
+            <div class="content">
+                <ul>
+                    <li data-param="characteristic" data-characteristic="" class="active">不限</li>
+                    <li data-param="characteristic" data-characteristic="沿街旺铺">沿街旺铺</li>
+                    <li data-param="characteristic" data-characteristic="繁华地段">繁华地段</li>
+                    <li data-param="characteristic" data-characteristic="专业市场">专业市场</li>
+                    <li data-param="characteristic" data-characteristic="住宅底商">住宅底商</li>
+                    <li data-param="characteristic" data-characteristic="综合配套">综合配套</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="mask-box hide"></div>
+    <div class="main list-box">
+        <a href="qiuzu_details.html" class="list-item plr12">
+            <div class="list-info flex-equal">
+                <p class="flex align-items-center">
+                    <span class="title f14 c-333 oneEllipsis">新一代国际豪华公寓</span>
+                    <!-- 最热图标 -->
+                    <i class="icon qiuzu-hot-icon"></i>
+                </p>
+                <p class="flex align-items-center">
+                    <span class="flex">
+                        <i class="icon location-icon"></i>
+                        <span class="f12 c-999">期望区域：南山 南油</span>
+                    </span>
+                    <span class="c-ff5555 f14 flex-right">3200-5000元/月</span>
+                </p>
+                <p class="flex">
+                    <i class="icon qiuzu-type-icon"></i>
+                    <span class="f12 c-999">商铺求租：综合体配套 | 700-800m²</span>
+                </p>
+            </div>
+        </a>
+        <a href="qiuzu_details.html" class="list-item plr12">
+            <div class="list-info flex-equal">
+                <p class="flex align-items-center">
+                    <span class="title f14 c-333 oneEllipsis">新一代国际豪华公寓</span>
+                    <!-- 最新图标 -->
+                    <i class="icon qiuzu-new-icon"></i>
+                </p>
+                <p class="flex align-items-center">
+                    <span class="flex">
+                        <i class="icon location-icon"></i>
+                        <span class="f12 c-999">期望区域：南山 南油</span>
+                    </span>
+                    <span class="c-ff5555 f14 flex-right">3200-5000元/月</span>
+                </p>
+                <p class="flex">
+                    <i class="icon qiuzu-type-icon"></i>
+                    <span class="f12 c-999">商铺求租：综合体配套 | 700-800m²</span>
+                </p>
+            </div>
+        </a>
+        <div class="loading-box"></div>
+        <!-- 无数据的时候显示 -->
+        <div class="no-data-box hide">
+            <div class="list-no-data-bg"></div>
+            <p class="tcenter f12 c-333 mt12">暂无数据</p>
+            <div class="btns flex">
+                <a href="http://m.zuke.com/n/release_house.html" class="btn">上传房源信息</a>
+                <a href="http://m.zuke.com/n/release_qiuzu.html" class="btn">发布求租信息</a>
+            </div>
+            <div class="bb-eee ptb12">
+                <p class="c-333 f14 plr12">推荐房源</p>
+                <div class="swiper-container recommend-house swiper-container-horizontal swiper-container-free-mode">
+                    <div class="swiper-wrapper" style="transform: translate3d(12px, 0px, 0px); transition-duration: 0ms;">
+                        <a href="" class="swiper-slide swiper-slide-active" style="width: 169.918px; margin-right: 12px;">
+                    <img src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3720393058,1997690162&amp;fm=27&amp;gp=0.jpg" alt="">
+                    <p class="c-333 f14">石景山 永乐小区</p>
+                    <p class="flex align-items-center"><span class="c-999 f12">32m²/2室1厅</span><span class="f16 c-ff5555 flex-right">3200元/月</span></p>
+                </a>
+                        <a href="" class="swiper-slide swiper-slide-next" style="width: 169.918px; margin-right: 12px;">
+                    <img src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3720393058,1997690162&amp;fm=27&amp;gp=0.jpg" alt="">
+                    <p class="c-333 f14">石景山 永乐小区</p>
+                    <p class="flex align-items-center"><span class="c-999 f12">32m²/2室1厅</span><span class="f16 c-ff5555 flex-right">3200元/月</span></p>
+                </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 隐藏域 -->
+    <div class="hide">
+        <input type="hidden" name="district" id="district" value="" />
+        <input type="hidden" name="region" id="region" value="" />
+        <input type="hidden" name="line" id="line" value="" />
+        <input type="hidden" name="station" id="station" value="" />
+        <input type="hidden" name="rent" id="rent" value="" />
+        <input type="hidden" name="square" id="square" value="" />
+        <input type="hidden" name="characteristic" id="characteristic" value="" />
+    </div>
+    <script type="text/javascript" src="js/libs/jquery.min.js"></script>
+    <script type="text/javascript" src="js/plugins/layer.js"></script>
+    <script type="text/javascript" src="js/common/common.js"></script>
+    <script type="text/javascript" src="js/plugins/swiper-jquery.min.js"></script>
+    <script type="text/javascript" src="js/views/qiuzu_shop_list.js"></script>
+</body>
+
+</html>

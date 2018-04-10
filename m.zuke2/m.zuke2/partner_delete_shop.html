@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta name="format-detection" content="telephone=no" />
+    <title>【租客网】,租客深圳租房_租房网_深圳租房信息_房屋托管</title>
+    <link rel="stylesheet" type="text/css" href="css/common/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/plugins/layer.css" />
+    <link rel="stylesheet" type="text/css" href="css/views/public.css" />
+</head>
+
+<body class="office_list pt37 pb40">
+    <!-- 头部 -->
+    <div class="top-fixed bg-fff flex align-items-center bb-ddd">
+        <a href="javascript:history.go(-1)" class="return-icon ml15"></a>
+        <div class="absolute translateHalf subsection">
+            <a href="partner_delete_house.html" class="subsection-item">住宅</a>
+            <a href="partner_delete_office.html" class="subsection-item">写字楼</a>
+            <a class="subsection-item active">商铺</a>
+        </div>
+        <i class="icon search-deep-icon list-search-icon flex-right mr13"></i>
+    </div>
+    <!-- 搜索弹出 -->
+    <div class="search-fixed top-fixed bg-fff align-items-center bb-ddd hide">
+        <a href="javascript:history.go(-1)" class="return-icon ml15 close-search"></a>
+        <div class="long-search-box flex align-items-center ml25 bg-eee">
+            <input id="search" class="f12" type="text" placeholder="请输入搜索关键字" />
+            <span class="search-fade-icon ml8 search-btn"></span>
+        </div>
+        <span class="f14 c-333 flex-right mr13 search-hide white-space-normal">收起</span>
+    </div>
+    <div class="main list-box">
+        <div class="flex plr12">
+            <div class="flex align-items-center checkbox-wrap">
+                <span class="checkbox">
+                    <!-- 传入对应房源的id.. -->
+                    <input type="checkbox" id="c1">
+                    <label for="c1"></label>
+                </span>
+            </div>
+            <a href="shop_details.html" class="list-item">
+                <div class="list-img">
+                    <img src="images/lazyload-default.png" data-src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3720393058,1997690162&fm=27&gp=0.jpg" alt="房源图片" />
+                    <!-- 认证图标 -->
+                    <i class="icon authentication authentication-icon"></i>
+                </div>
+                <div class="list-info flex-equal">
+                    <p class="f14 c-333 oneEllipsis">西丽步行街旺铺</p>
+                    <p class="f12 c-999">13.1m² | 高层/21层</p>
+                    <p class="flex"><i class="icon location-icon"></i><span class="f12 c-999">南山西丽</span></p>
+                    <p class="c-ff5555 f14">3200元/月</p>
+                </div>
+            </a>
+        </div>
+        <div class="flex plr12">
+            <div class="flex align-items-center checkbox-wrap">
+                <span class="checkbox">
+                    <!-- 传入对应房源的id.. -->
+                    <input type="checkbox" id="c2">
+                    <label for="c2"></label>
+                </span>
+            </div>
+            <a href="shop_details.html" class="list-item">
+                <div class="list-img">
+                    <img src="images/lazyload-default.png" data-src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3720393058,1997690162&fm=27&gp=0.jpg" alt="房源图片" />
+                    <!-- 认证图标 -->
+                    <i class="icon authentication authentication-icon"></i>
+                </div>
+                <div class="list-info flex-equal">
+                    <p class="f14 c-333 oneEllipsis">西丽步行街旺铺</p>
+                    <p class="f12 c-999">13.1m² | 高层/21层</p>
+                    <p class="flex"><i class="icon location-icon"></i><span class="f12 c-999">南山西丽</span></p>
+                    <p class="c-ff5555 f14">3200元/月</p>
+                </div>
+            </a>
+        </div>
+        <div class="loading-box"></div>
+    </div>
+    <div class="operation-bottom del">删除选中房源</div>
+    <script type="text/javascript" src="js/libs/jquery.min.js"></script>
+    <script type="text/javascript" src="js/plugins/layer.js"></script>
+    <script type="text/javascript" src="js/common/common.js"></script>
+    <script type="text/javascript" src="js/views/partner_delete_shop.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta name="format-detection" content="telephone=no" />
+    <title>【租客网】,租客深圳租房_租房网_深圳租房信息_房屋托管</title>
+    <link rel="stylesheet" type="text/css" href="css/common/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/views/public.css" />
+    <link rel="stylesheet" type="text/css" href="css/plugins/layer.css" />
+</head>
+
+<body class="wallet withdrawals pt37 pb40 bg-f2f2f2">
+    <!-- 头部 -->
+    <div class="top-fixed bg-fff flex align-items-center bb-ddd">
+        <a href="javascript:history.go(-1)" class="return-icon ml15"></a>
+        <span class="f16 c-333 absolute translateHalf">提现</span>
+    </div>
+    <div class="bg-fff hidden">
+        <p class="f12 c-999 plr12 pt12">请输入提现金额</p>
+        <div class="money-input-box">
+            <span>￥</span>
+            <input class="withdrawals-num" type="number" maxlength="9" />
+        </div>
+    </div>
+    <p class="f12 c-999 plr12 ptb12">请添加银行卡完成提现</p>
+    <!-- 还没绑定银行卡 -->
+    <div class="hide">
+        <ul class="ul-list">
+            <li class="bb-eee">
+                <span class="f14 c-333 rneed">您的姓名</span>
+                <span class="flex flex-right align-items-center">
+                    <input class="tright name" type="text" placeholder="请输入姓名">
+                </span>
+            </li>
+            <li class="bb-eee">
+                <span class="f14 c-333 rneed">银行卡号</span>
+                <span class="flex flex-right align-items-center">
+                    <input class="tright card-num" type="text" placeholder="请输入银行卡号">
+                </span>
+            </li>
+        </ul>
+        <p class="bank-card">
+            <!-- 中国银行：zhongguoyinhang-icon；北京银行：beijing-icon；工商银行：gongshangyinhang-icon；光大银行：guangda-icon; -->
+            <i class="icon zhongguoyinhang-icon"></i>
+            <span>中国银行</span>
+        </p>
+    </div>
+    <!-- 已绑定银行卡 -->
+    <div class="">
+        <ul class="ul-list">
+            <li class="bb-eee bt-eee select-card">
+                <i class="pay-method-icon zhongguoyinhang-icon"></i>
+                <span class="flex flex-column f14">
+                    <span class="c-333 mb4">中国银行</span>
+                    <span class="c-999">尾号0998储蓄卡</span>
+                </span>
+                <span class="flex flex-right align-items-center">
+                    <span class="next"></span>
+                </span>
+            </li>
+        </ul>
+    </div>
+    <p class="agreement flex align-items-center justify-content-center">
+        <span class="check-box">
+            <input id="agreement-checkbox" type="checkbox">
+            <label for="agreement-checkbox"></label>
+        </span>
+        <label for="agreement-checkbox">我已阅读并同意</label>
+        <a href="/register/agreement">《租客网支付协议》</a></p>
+    <button class="wallet-btn confirm-withdrawals">确定</button>
+    <!-- 选择银行卡pop-->
+    <div class="select-card-pop wh100 bg-fff pt37 pop hide">
+        <div class="top-fixed bg-fff flex align-items-center bb-ddd">
+            <div class="return-icon ml15 close-select-card"></div>
+            <span class="f16 c-333 absolute translateHalf">选择银行卡</span>
+            <i class="icon add-deep-icon list-search-icon flex-right mr13 add-bank"></i>
+        </div>
+        <ul class="ul-list">
+            <li class="bb-eee bt-eee">
+                <a data-bank="中国银行" data-icon="zhongguoyinhang-icon" data-weihao="尾号0998储蓄卡">
+                    <i class="pay-method-icon zhongguoyinhang-icon"></i>
+                    <span class="flex flex-column f14">
+                        <span class="c-333 mb4">中国银行</span>
+                        <span class="c-999">尾号0998储蓄卡</span>
+                    </span>
+                </a>
+            </li>
+            <li class="bb-eee bt-eee">
+                <a data-bank="光大银行" data-icon="guangdayinhang-icon" data-weihao="尾号0998储蓄卡">
+                    <i class="pay-method-icon guangdayinhang-icon"></i>
+                    <span class="flex flex-column f14">
+                        <span class="c-333 mb4">光大银行</span>
+                        <span class="c-999">尾号0998储蓄卡</span>
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- 添加银行卡pop-->
+    <div class="add-card-pop wh100 bg-fff pt37 pop hide">
+        <div class="top-fixed bg-fff flex align-items-center bb-ddd">
+            <div class="return-icon ml15 close-add-card"></div>
+            <span class="f16 c-333 absolute translateHalf">添加银行卡</span>
+        </div>
+        <ul class="ul-list">
+            <li class="bb-eee">
+                <span class="f14 c-333 rneed">您的姓名</span>
+                <span class="flex flex-right align-items-center">
+                    <input class="tright name" type="text" placeholder="请输入姓名">
+                </span>
+            </li>
+            <li class="bb-eee">
+                <span class="f14 c-333 rneed">银行卡号</span>
+                <span class="flex flex-right align-items-center">
+                    <input class="tright card-num" type="text" placeholder="请输入银行卡号">
+                </span>
+            </li>
+        </ul>
+        <p class="bank-card">
+            <!-- 中国银行：zhongguoyinhang-icon；北京银行：beijing-icon；工商银行：gongshangyinhang-icon；光大银行：guangda-icon; -->
+            <i class="icon zhongguoyinhang-icon"></i>
+            <span>中国银行</span>
+        </p>
+        <button class="wallet-btn confirm-add-bank">确定</button>
+    </div>
+    <script type="text/javascript" src="js/libs/jquery.min.js"></script>
+    <script type="text/javascript" src="js/plugins/layer.js"></script>
+    <script type="text/javascript" src="js/common/common.js"></script>
+    <script type="text/javascript" src="js/views/wallet_withdrawals.js"></script>
+</body>
+
+</html>

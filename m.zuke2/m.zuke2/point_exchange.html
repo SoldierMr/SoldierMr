@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta name="format-detection" content="telephone=no" />
+    <title>【租客网】,租客深圳租房_租房网_深圳租房信息_房屋托管</title>
+    <link rel="stylesheet" type="text/css" href="css/common/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/plugins/layer.css" />
+    <link rel="stylesheet" type="text/css" href="css/views/public.css" />
+</head>
+
+<body class="point-coupon pt37">
+    <!-- 头部 -->
+    <div class="top-fixed bg-fff flex align-items-center bb-ddd">
+        <a href="javascript:history.go(-1)" class="return-icon ml15"></a>
+        <div class="absolute translateHalf subsection">
+            <a class="subsection-item active">积分</a>
+            <a href="rent_coupon.html" class="subsection-item">租金券</a>
+        </div>
+    </div>
+    <div class="chahua-box">
+        <div class="num translateTopHalf">
+            <p class="point-sum">300</p>
+            <p>积分</p>
+        </div>
+        <div class="rule flex align-items-center">
+            <i class="icon wenhao-icon"></i>
+            <span>规则</span>
+        </div>
+    </div>
+    <div class="tabs tiX">
+        <ul class="clearfix">
+            <li><a href="point_details.html">明细</a></li>
+            <li class="active">我要兑换</li>
+        </ul>
+    </div>
+    <div class="ptb12">
+        <div class="coupon-box">
+            <div class="coupon-left">
+                <p>需要扣除100积分</p>
+                <button class="btn exchange-btn" data-point="100" data-rent="10">兑换</button>
+            </div>
+            <div class="coupon-right">
+                <p class="f18 c-ff5555 bold">10元</p>
+                <p class="f12 c-ff5555">租金券</p>
+            </div>
+            <div class="left-semi-circle"></div>
+            <div class="right-semi-circle"></div>
+        </div>
+        <!-- 不可用加个frozen -->
+        <div class="coupon-box">
+            <div class="coupon-left">
+                <p>需要扣除300积分</p>
+                <button class="btn exchange-btn" data-point="300" data-rent="30">兑换</button>
+            </div>
+            <div class="coupon-right">
+                <p class="f18 c-ff5555 bold">30元</p>
+                <p class="f12 c-ff5555">租金券</p>
+            </div>
+            <div class="left-semi-circle"></div>
+            <div class="right-semi-circle"></div>
+        </div>
+        <div class="coupon-box frozen">
+            <div class="coupon-left">
+                <p>需要扣除500积分</p>
+                <button class="btn exchange-btn" data-point="500" data-rent="50" disabled>兑换</button>
+            </div>
+            <div class="coupon-right">
+                <p class="f18 c-ff5555 bold">50元</p>
+                <p class="f12 c-ff5555">租金券</p>
+            </div>
+            <div class="left-semi-circle"></div>
+            <div class="right-semi-circle"></div>
+        </div>
+        <div class="coupon-box frozen">
+            <div class="coupon-left">
+                <p>需要扣除1000积分</p>
+                <button class="btn exchange-btn" data-point="1000" data-rent="100" disabled>兑换</button>
+            </div>
+            <div class="coupon-right">
+                <p class="f18 c-ff5555 bold">100元</p>
+                <p class="f12 c-ff5555">租金券</p>
+            </div>
+            <div class="left-semi-circle"></div>
+            <div class="right-semi-circle"></div>
+        </div>
+    </div>
+    <div class="exchange-bg hide">
+        <div class="exchange-pop">
+            <p class="title"><span>兑换</span><span class="rent-coupon c-ff5555">10</span><span>元租金券</span></p>
+            <p class="flex align-items-center calc">
+                <span class="f12 c-333">数量</span>
+                <i class="icon minus-icon"></i>
+                <span class="exchange-num f12 c-333">1</span>
+                <i class="icon add-icon"></i>
+                <span class="c-999 f10"><span>需要抵扣</span><span class="deduction-point c-ff5555">100</span><span>积分</span></span>
+            </p>
+            <div class="btns flex">
+                <div class="flex-equal close-btn btn">取消</div>
+                <div class="flex-equal confirm-btn btn">确定</div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/libs/jquery.min.js"></script>
+    <script type="text/javascript" src="js/plugins/layer.js"></script>
+    <script type="text/javascript" src="js/common/common.js"></script>
+    <script type="text/javascript" src="js/views/point_exchange.js"></script>
+</body>
+
+</html>

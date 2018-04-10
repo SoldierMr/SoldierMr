@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta name="format-detection" content="telephone=no" />
+    <title>【租客网】,租客深圳租房_租房网_深圳租房信息_房屋托管</title>
+    <link rel="stylesheet" type="text/css" href="css/common/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/views/public.css" />
+    <link rel="stylesheet" type="text/css" href="css/plugins/layer.css" />
+</head>
+
+<body class="wallet pt37 pb40">
+    <!-- 头部 -->
+    <div class="top-fixed bg-fff flex align-items-center bb-ddd">
+        <a href="javascript:history.go(-1)" class="return-icon ml15"></a>
+        <span class="f16 c-333 absolute translateHalf">常见问题</span>
+    </div>
+    <ul class="ul-list">
+        <li class="bb-eee" name="提现到帐时间">
+            <span class="flex align-items-center f14 c-333"><i class="icon Q-icon"></i><span>提现到帐时间</span></span>
+            <span class="flex flex-right align-items-center">
+                <span class="next"></span>
+            </span>
+        </li>
+        <div class="li-box bb-eee hide" name="提现到帐时间">
+            <p class="flex plr12 ptb12 f12">
+                <span class="c-3fabfa">|</span>
+                <span class="flex-hang ml8 c-666">正常情况下，提现资金会在2小时内到账，特殊情况下(如银行系统异常)除外;若您超过两小时仍未收到提现资金，请耐心等待；提现失败时</span>
+            </p>
+        </div>
+        <li class="bb-eee" name="什么是余额">
+            <span class="flex align-items-center f14 c-333"><i class="icon Q-icon"></i><span>什么是余额</span></span>
+            <span class="flex flex-right align-items-center">
+                <span class="next"></span>
+            </span>
+        </li>
+        <div class="li-box bb-eee hide" name="什么是余额">
+            <p class="flex plr12 ptb12 f12">
+                <span class="c-3fabfa">|</span>
+                <span class="flex-hang ml8 c-666">正常情况下，提现资金会在2小时内到账，特殊情况下(如银行系统异常)除外;若您超过两小时仍未收到提现资金，请耐心等待；提现失败时</span>
+            </p>
+        </div>
+        <li class="bb-eee" name="充值限额">
+            <span class="flex align-items-center f14 c-333"><i class="icon Q-icon"></i><span>充值限额</span></span>
+            <span class="flex flex-right align-items-center">
+                <span class="next"></span>
+            </span>
+        </li>
+        <div class="li-box bb-eee hide" name="充值限额">
+            <p class="flex plr12 ptb12 f12">
+                <span class="c-3fabfa">|</span>
+                <span class="flex-hang ml8 c-666">正常情况下，提现资金会在2小时内到账，特殊情况下(如银行系统异常)除外;若您超过两小时仍未收到提现资金，请耐心等待；提现失败时</span>
+            </p>
+        </div>
+    </ul>
+    <script type="text/javascript" src="js/libs/jquery.min.js"></script>
+    <script type="text/javascript" src="js/plugins/layer.js"></script>
+    <script type="text/javascript" src="js/common/common.js"></script>
+    <script>
+    $(document).ready(function() {
+        // 配套下拉收缩
+        supportingItemToggle: (function() {
+            var that;
+            $(document).on('click', '.ul-list > li', function(e) {
+                e.preventDefault();
+                that = $(this);
+                if (!that.attr("name")) return false;
+
+                if (that.find('span:last-child').children('span').hasClass('next')) {
+                    that.find('span:last-child').children('span').addClass('shangla-icon').removeClass('next');
+                    $(".li-box[name='" + that.attr("name") + "']").slideDown(300);
+                } else if (that.find('span:last-child').children('span').hasClass('shangla-icon')) {
+                    that.find('span:last-child').children('span').addClass('next').removeClass('shangla-icon');
+                    $(".li-box[name='" + that.attr("name") + "']").slideUp(300);
+                }
+            });
+        })()
+    });
+    </script>
+</body>
+
+</html>

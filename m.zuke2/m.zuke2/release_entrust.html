@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta name="format-detection" content="telephone=no" />
+    <title>【租客网】,租客深圳租房_租房网_深圳租房信息_房屋托管</title>
+    <link rel="stylesheet" type="text/css" href="css/common/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/views/public.css" />
+    <link rel="stylesheet" type="text/css" href="css/plugins/layer.css" />
+</head>
+
+<body class="release-entrust release pt37">
+    <!-- 头部 -->
+    <div class="top-fixed bg-fff flex align-items-center bb-ddd">
+        <a href="javascript:history.go(-1)" class="return-icon ml15"></a>
+        <span class="f16 c-333 absolute translateHalf">发布委托</span>
+    </div>
+    <img src="images/release-entrust-ad.png" width="100%" />
+    <ul class="ul-list">
+        <li class="bb-eee">
+            <a class="area">
+                <span class="f14 c-333">所在区域</span>
+                <span class="flex flex-right align-items-center">
+                	<span class="area-html f12 c-666"></span>
+                    <span class="next"></span>
+                </span>
+            </a>
+        </li>
+    </ul>
+    <div class="main plr12 pt12 bb-eee">
+        <p class="f14 c-333">房屋用途</p>
+        <p class="notes house-use">
+            <span class="note active" data-type="house">住宅</span>
+            <span class="note" data-type="office">写字楼</span>
+            <span class="note" data-type="shop">商铺</span>
+        </p>
+    </div>
+    <div class="main">
+        <ul class="ul-list">
+            <li class="bb-eee house">
+                <a>
+                    <span class="f14 c-333">小区名称</span>
+                    <span class="flex flex-right align-items-center">
+                        <input class="tright court-name" type="text" placeholder="请输入小区名称" />
+                    </span>
+                </a>
+            </li>
+            <li class="bb-eee house">
+                <a>
+                    <span class="f14 c-333">地址</span>
+                    <span class="flex flex-right align-items-center">
+                        <input class="tright addr" type="text" placeholder="请填写详细地址" />
+                    </span>
+                </a>
+            </li>
+            <li class="bb-eee house">
+                <a>
+                    <span class="f14 c-333">房屋面积</span>
+                    <span class="flex flex-right align-items-center">
+                        <input class="tright square" type="text" placeholder="请输入房屋面积" />
+                        <span class="f14 c-333 ml8">m²</span>
+                    </span>
+                </a>
+            </li>
+            <li class="bb-eee house">
+                <a>
+                    <span class="f14 c-333">房屋户型</span>
+                    <span class="flex flex-right align-items-center house-type">
+                        <input class="tcenter house-shi" type="text" />
+                        <span class="f14 c-333">室</span>
+                        <input class="tcenter house-ting" type="text" />
+                        <span class="f14 c-333">厅</span>
+                        <input class="tcenter house-wei" type="text" />
+                        <span class="f14 c-333">卫</span>
+                    </span>
+                </a>
+            </li>
+            <li class="bb-eee">
+                <a>
+                    <span class="f14 c-333">期望租金</span>
+                    <span class="flex flex-right align-items-center">
+                        <input class="tright rent" type="text" placeholder="请输入期望租金" />
+                        <span class="f14 c-333 ml8">元/月</span>
+                    </span>
+                </a>
+            </li>
+            <li class="bb-eee">
+                <a>
+                    <span class="f14 c-333">姓名</span>
+                    <span class="flex flex-right align-items-center">
+                        <input class="tright name" type="text" placeholder="请填写姓名" />
+                    </span>
+                </a>
+            </li>
+            <li class="bb-eee">
+                <a>
+                    <span class="f14 c-333">手机号</span>
+                    <span class="flex flex-right align-items-center">
+                        <input class="tright phone" type="text" placeholder="请填写手机号" />
+                        <button class="get-code flex-right ml8">获取验证码</button>
+                    </span>
+                </a>
+            </li>
+            <li class="bb-eee">
+                <a>
+                    <span class="f14 c-333">验证码</span>
+                    <span class="flex flex-right align-items-center">
+                        <input class="tright sms-code" type="text" placeholder="请填写验证码" />
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <p class="agreement flex align-items-center justify-content-center">
+        <span class="check-box">
+    		<input id="agreement-checkbox" type="checkbox" />
+    		<label for="agreement-checkbox"></label>
+    	</span>
+        <label for="agreement-checkbox">我已阅读并同意</label>
+        <a href="/register/agreement">《租客网出租委托协议》</a></p>
+    <!-- 选择区域 -->
+    <div class="area-pop wh100 bg-fff pt37 pop hide">
+        <div class="top-fixed bg-fff flex align-items-center bb-ddd">
+            <div class="return-icon ml15 close-area"></div>
+            <span class="f16 c-333 absolute translateHalf">选择区域</span>
+        </div>
+        <div class="flex area-box">
+            <ul class="ul-list flex-equal district">
+                <li data-param="district" data-district="1018">南山区</li>
+                <li data-param="district" data-district="1016">福田区</li>
+                <li data-param="district" data-district="1025">大棚新区</li>
+                <li data-param="district" data-district="1024">光明新区</li>
+                <li data-param="district" data-district="1017">罗湖区</li>
+            </ul>
+            <ul class="ul-list flex-equal flex-hang region hide">
+                <li data-param="region" data-region="10395">西丽</li>
+                <li data-param="region" data-region="10395">深大</li>
+                <li data-param="region" data-region="10395">白石洲</li>
+                <li data-param="region" data-region="10395">世界之窗</li>
+                <li data-param="region" data-region="10395">华侨城</li>
+                <li data-param="region" data-region="10395">大学城</li>
+            </ul>
+        </div>
+    </div>
+    <button class="submit release-sub">提交</button>
+    <script type="text/javascript" src="js/libs/jquery.min.js"></script>
+    <script type="text/javascript" src="js/common/common.js"></script>
+    <script type="text/javascript" src="js/plugins/layer.js"></script>
+    <script type="text/javascript" src="js/views/release_entrust.js"></script>
+</body>
+
+</html>

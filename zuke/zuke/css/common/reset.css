@@ -1,0 +1,39 @@
+/* 清除内外边距 */
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, /* structural elements 结构元素 */
+dl, dt, dd, ul, ol, li, /* list elements 列表元素 */
+pre, /* text formatting elements 文本格式元素 */
+fieldset, lengend, button, input, textarea, /* form elements 表单元素 */
+th, td { /* table elements 表格元素 */
+margin: 0;
+padding: 0; }
+body,button,input,select,textarea { font-size: 12px; font-family: PingFang Medium, "Microsoft YaHei", "PingFang SC", Arial, "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif; }
+
+* { -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+h1,h2,h3,h4,h5,h6 { font-size: 100%; }
+
+ul,ol { list-style: none; }
+
+a { text-decoration: none; color: #333; }
+a:link, a:visited, a:hover, a:active { text-decoration: none; }
+
+fieldset,img { border: 0; }
+
+button,input,select,textarea { font-size: 100%; outline: none; }
+input:focus { outline: none; }
+
+/*去掉input在type="number"时的上下小箭头*/
+input[type=number] { -moz-appearance:textfield; }
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button { -webkit-appearance: none; margin: 0; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+.left { float: left; }
+.right { float: right; }
+.clearfix { clear:both; }
+.clearfix:after { clear: both; content:" "; display: block; font-size: 0; height: 0; visibility: hidden; }
+/* for IE6 */
+*html .clearfix { zoom:1; }
+/* for IE7 */
+*+html .clearfix { zoom:1; }

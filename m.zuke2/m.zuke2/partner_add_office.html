@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta name="format-detection" content="telephone=no" />
+    <title>【租客网】,租客深圳租房_租房网_深圳租房信息_房屋托管</title>
+    <link rel="stylesheet" type="text/css" href="css/common/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/plugins/layer.css" />
+    <link rel="stylesheet" type="text/css" href="css/views/public.css" />
+</head>
+
+<body class="office_list pt77 pb40">
+    <!-- 头部 -->
+    <div class="top-fixed bg-fff flex align-items-center bb-ddd">
+        <a href="javascript:history.go(-1)" class="return-icon ml15"></a>
+        <div class="absolute translateHalf subsection">
+            <a href="partner_add_house.html" class="subsection-item">住宅</a>
+            <a class="subsection-item active">写字楼</a>
+            <a href="partner_add_shop.html" class="subsection-item">商铺</a>
+        </div>
+        <i class="icon search-deep-icon list-search-icon flex-right mr13"></i>
+    </div>
+    <!-- 搜索弹出 -->
+    <div class="search-fixed top-fixed bg-fff align-items-center bb-ddd hide">
+        <a href="javascript:history.go(-1)" class="return-icon ml15 close-search"></a>
+        <div class="long-search-box flex align-items-center ml25 bg-eee">
+            <input id="search" class="f12" type="text" placeholder="请输入搜索关键字" />
+            <span class="search-fade-icon ml8 search-btn"></span>
+        </div>
+        <span class="f14 c-333 flex-right mr13 search-hide white-space-normal">收起</span>
+    </div>
+    <!-- 筛选栏 -->
+    <div class="criteria-box flex bb-eee bg-fff">
+        <div class="criteria-item" name="area" data-active="0"><span>区域</span><i class="criteria-arrow-icon icon"></i></div>
+        <div class="criteria-pop maxh300 hide" name="area">
+            <div class="tabs bg-fff">
+                <ul>
+                    <li class="active" name="area-content">区域</li>
+                    <li name="metro-content">地铁</li>
+                </ul>
+            </div>
+            <div class="tab-content bg-f2f2f2 flex" name="area-content">
+                <div class="left-content" name="area-content">
+                    <ul>
+                        <li class="unlimited" data-param="district" data-district="">不限</li>
+                        <li data-param="district" data-district="1018">南山</li>
+                        <li data-param="district" data-district="1017">罗湖</li>
+                        <li data-param="district" data-district="1016">福田</li>
+                        <li data-param="district" data-district="1020">宝安</li>
+                    </ul>
+                </div>
+                <div class="right-content hide">
+                    <ul>
+                        <li data-param="region" data-region="">不限</li>
+                        <li data-param="region" data-region="10396">竹子林</li>
+                        <li data-param="region" data-region="10395">中心区</li>
+                        <li data-param="region" data-region="10397">车公庙</li>
+                        <li data-param="region" data-region="10398">福华新村</li>
+                        <li data-param="region" data-region="10399">福民新村</li>
+                        <li data-param="region" data-region="10400">福田区委</li>
+                        <li data-param="region" data-region="10401">岗厦</li>
+                        <li data-param="region" data-region="10402">购物公园</li>
+                        <li data-param="region" data-region="10403">皇岗</li>
+                        <li data-param="region" data-region="10404">华强北</li>
+                        <li data-param="region" data-region="10405">华强南</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tab-content bg-f2f2f2 hide" name="metro-content">
+                <div class="left-content">
+                    <ul>
+                        <li class="unlimited" data-param="line" data-line="">不限</li>
+                        <li data-param="line" data-line="1">一号线(罗宝线)</li>
+                        <li data-param="line" data-line="2">二号线(蛇口线)</li>
+                        <li data-param="line" data-line="3">三号线(龙岗线)</li>
+                        <li data-param="line" data-line="4">四号线(龙华线)</li>
+                        <li data-param="line" data-line="5">五号线(环中线)</li>
+                        <li data-param="line" data-line="7">七号线</li>
+                    </ul>
+                </div>
+                <div class="right-content hide">
+                    <ul>
+                        <li class="unlimited" data-param="station" data-station="">不限</li>
+                        <li data-param="station" data-station="10">罗湖</li>
+                        <li data-param="station" data-station="11">老街</li>
+                        <li data-param="station" data-station="12">国贸</li>
+                        <li data-param="station" data-station="13">大剧院</li>
+                        <li data-param="station" data-station="14">科学馆</li>
+                        <li data-param="station" data-station="15">华强北</li>
+                        <li data-param="station" data-station="16">深大</li>
+                        <li data-param="station" data-station="17">世界之窗</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="criteria-item" name="rent" data-active="0"><span>租金</span><i class="criteria-arrow-icon icon"></i></div>
+        <div class="criteria-pop maxh300 hide" name="rent">
+            <div class="content">
+                <ul>
+                    <li data-param="rent" data-rentstart="" data-rentend="">不限</li>
+                    <li data-param="rent" data-rentstart="0" data-rentend="40">40元/m²/月以下</li>
+                    <li data-param="rent" data-rentstart="40" data-rentend="60">40-60元/m²/月</li>
+                    <li data-param="rent" data-rentstart="60" data-rentend="80">60-80元/m²/月</li>
+                    <li data-param="rent" data-rentstart="80" data-rentend="100">80-100元/m²/月</li>
+                    <li data-param="rent" data-rentstart="100" data-rentend="120">100-120元/m²/月</li>
+                    <li data-param="rent" data-rentstart="120" data-rentend="">120元/m²/月以上</li>
+                </ul>
+            </div>
+            <div class="absolute price-range range flex align-items-center bg-fff">
+                <input class="rentstart" type="text" placeholder="最低价格" /><span class="c-999">-</span>
+                <input class="rentend" type="text" placeholder="最高价格" />
+                <button class="price-range-btn">确定</button>
+            </div>
+        </div>
+        <div class="criteria-item" name="square" data-active="0"><span>面积</span><i class="criteria-arrow-icon icon"></i></div>
+        <div class="criteria-pop maxh300 hide" name="square">
+            <div class="content">
+                <ul>
+                    <li data-param="square" data-squarestart="" data-squareend="">不限</li>
+                    <li data-param="square" data-squarestart="0" data-squareend="80">80m²以下</li>
+                    <li data-param="square" data-squarestart="80" data-squareend="120">80-120m²</li>
+                    <li data-param="square" data-squarestart="120" data-squareend="150">120-150m²</li>
+                    <li data-param="square" data-squarestart="150" data-squareend="200">150-200m²</li>
+                    <li data-param="square" data-squarestart="200" data-squareend="300">200-300m²</li>
+                    <li data-param="square" data-squarestart="300" data-squareend="">300m²以上</li>
+                </ul>
+            </div>
+            <div class="absolute square-range range flex align-items-center bg-fff">
+                <input class="squarestart" type="text" placeholder="最小面积" /><span class="c-999">-</span>
+                <input class="squareend" type="text" placeholder="最大面积" />
+                <button class="square-range-btn">确定</button>
+            </div>
+        </div>
+        <div class="criteria-item" name="characteristic" data-active="0"><span>特色</span><i class="criteria-arrow-icon icon"></i></div>
+        <div class="criteria-pop maxh300 hide" name="characteristic">
+            <div class="content">
+                <ul>
+                    <li data-param="characteristic" data-characteristic="" class="active">不限</li>
+                    <li data-param="characteristic" data-characteristic="标志建筑">标志建筑</li>
+                    <li data-param="characteristic" data-characteristic="5A甲级">5A甲级</li>
+                    <li data-param="characteristic" data-characteristic="名企入驻">名企入驻</li>
+                    <li data-param="characteristic" data-characteristic="近地铁">近地铁</li>
+                    <li data-param="characteristic" data-characteristic="电梯口">电梯口</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="mask-box hide"></div>
+    <div class="main list-box">
+        <div class="flex plr12">
+            <div class="flex align-items-center checkbox-wrap">
+                <span class="checkbox">
+                    <!-- 传入对应房源的id.. -->
+                    <input type="checkbox" id="c1">
+                    <label for="c1"></label>
+                </span>
+            </div>
+            <a href="office_details.html" class="list-item">
+                <div class="list-img">
+                    <img src="images/lazyload-default.png" data-src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3720393058,1997690162&fm=27&gp=0.jpg" alt="房源图片" />
+                    <!-- 认证图标 -->
+                    <i class="icon authentication authentication-icon"></i>
+                </div>
+                <div class="list-info flex-equal">
+                    <p class="f14 c-333 oneEllipsis">汉唐大厦</p>
+                    <p class="f12 c-999">13.1m²/4-6层</p>
+                    <p class="flex"><i class="icon location-icon"></i><span class="f12 c-999">华侨城</span></p>
+                    <p class="c-ff5555 f14">3200元/m²/月</p>
+                </div>
+            </a>
+        </div>
+        <div class="flex plr12">
+            <div class="flex align-items-center checkbox-wrap">
+                <span class="checkbox">
+                    <!-- 传入对应房源的id.. -->
+                    <input type="checkbox" id="c2">
+                    <label for="c2"></label>
+                </span>
+            </div>
+            <a href="office_details.html" class="list-item">
+                <div class="list-img">
+                    <img src="images/lazyload-default.png" data-src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3720393058,1997690162&fm=27&gp=0.jpg" alt="房源图片" />
+                    <!-- 认证图标 -->
+                    <i class="icon authentication authentication-icon"></i>
+                </div>
+                <div class="list-info flex-equal">
+                    <p class="f14 c-333 oneEllipsis">汉唐大厦</p>
+                    <p class="f12 c-999">13.1m²/4-6层</p>
+                    <p class="flex"><i class="icon location-icon"></i><span class="f12 c-999">华侨城</span></p>
+                    <p class="c-ff5555 f14">3200元/m²/月</p>
+                </div>
+            </a>
+        </div>
+        <div class="loading-box"></div>
+    </div>
+    <div class="operation-bottom add">添加选中房源</div>
+    <!-- 隐藏域 -->
+    <div class="hide">
+        <input type="hidden" name="district" id="district" value="" />
+        <input type="hidden" name="region" id="region" value="" />
+        <input type="hidden" name="line" id="line" value="" />
+        <input type="hidden" name="station" id="station" value="" />
+        <input type="hidden" name="rentstart" id="rentstart" value="" />
+        <input type="hidden" name="rentend" id="rentend" value="" />
+        <input type="hidden" name="squarestart" id="squarestart" value="" />
+        <input type="hidden" name="squareend" id="squareend" value="" />
+        <input type="hidden" name="characteristic" id="characteristic" value="" />
+    </div>
+    <script type="text/javascript" src="js/libs/jquery.min.js"></script>
+    <script type="text/javascript" src="js/plugins/layer.js"></script>
+    <script type="text/javascript" src="js/common/common.js"></script>
+    <script type="text/javascript" src="js/views/partner_add_office.js"></script>
+</body>
+
+</html>

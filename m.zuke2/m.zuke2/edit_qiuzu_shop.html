@@ -1,0 +1,157 @@
+<html lang="en" style="font-size: 23.4375px;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta name="format-detection" content="telephone=no">
+    <title>【租客网】,租客深圳租房_租房网_深圳租房信息_房屋托管</title>
+    <link rel="stylesheet" type="text/css" href="css/common/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/views/public.css">
+    <link rel="stylesheet" type="text/css" href="css/plugins/layer.css">
+    <link href="http://m.zuke.com/n/js/plugins/need/layer.css?2.0" type="text/css" rel="styleSheet" id="layermcss">
+</head>
+
+<body class="release-qiuzu release pt37" style="top: 0px;">
+    <!-- 头部 -->
+    <div class="top-fixed bg-fff flex align-items-center bb-ddd">
+        <a href="javascript:history.go(-1)" class="return-icon ml15"></a>
+        <span class="f16 c-333 absolute translateHalf">修改求租</span>
+    </div>
+    <div class="main">
+        <ul class="ul-list">
+            <li class="bb-eee">
+                <a>
+                    <span class="f14 c-333 rneed">标题</span>
+                    <span class="flex flex-right align-items-center">
+                        <input class="tright title" type="text" placeholder="仅填写标题">
+                    </span>
+                </a>
+            </li>
+            <li class="bb-eee">
+                <a>
+                    <span class="f14 c-333 rneed">期望面积</span>
+                    <span class="flex align-items-center hope f14 c-333">
+                        <input class="tcenter squarestart" type="text">
+                        <span>至</span>
+                        <input class="tcenter squareend" type="text">
+                        <span>m²</span>
+                    </span>
+                </a>
+            </li>
+            <li class="bb-eee">
+                <a>
+                    <span class="f14 c-333 rneed">期望租金</span>
+                    <span class="flex align-items-center hope f14 c-333">
+                        <input class="tcenter rentstart" type="text">
+                        <span>至</span>
+                        <input class="tcenter rentend" type="text">
+                        <span>元/月</span>
+                    </span>
+                </a>
+            </li>
+            <li class="bb-eee house house-type"><a class="shop-type"><span class="f14 c-333">商铺类型</span><span class="flex flex-right align-items-center"><span class="f12 c-666">未选择</span><span class="next"></span></span></a></li>
+            <li class="bb-eee">
+                <a class="labels">
+                    <span class="f14 c-333">特色标签</span>
+                    <span class="flex flex-right align-items-center">
+                        <span class="f12 c-666">未选择</span>
+                        <span class="next"></span>
+                    </span>
+                </a>
+            </li>
+            <li class="bb-eee">
+                <a class="area">
+                    <span class="f14 c-333">期望区域</span>
+                    <span class="flex flex-right align-items-center">
+                        <span class="area-html f12 c-666">未选择</span>
+                        <span class="next"></span>
+                    </span>
+                </a>
+            </li>
+            <li class="bb-eee">
+                <a>
+                    <span class="f14 c-333">指定小区</span>
+                    <span class="flex flex-right align-items-center">
+                        <input class="tright court-name" type="text" placeholder="仅填写小区名称">
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="main plr12 ptb12 bb-eee">
+        <p class="f14 c-333 relative rneed">求租描述</p>
+        <textarea class="qiuzu-desc pt12" placeholder="请输入求租描述" data-maxword="800" name="qiuzu-desc"></textarea>
+        <p class="f12 c-999"><span class="shengyu">0</span><span>/800</span></p>
+    </div>
+    <p class="agreement flex align-items-center justify-content-center">
+        <span class="check-box">
+            <input id="agreement-checkbox" type="checkbox">
+            <label for="agreement-checkbox"></label>
+        </span>
+        <label for="agreement-checkbox">我已阅读并同意</label>
+        <a href="/register/agreement">《租客网发布求租协议》</a>
+    </p>
+    <!-- 选择区域 -->
+    <div class="area-pop wh100 bg-fff pt37 pop hide" style="display: none;">
+        <div class="top-fixed bg-fff flex align-items-center bb-ddd">
+            <div class="return-icon ml15 close-area"></div>
+            <span class="f16 c-333 absolute translateHalf">选择区域</span>
+        </div>
+        <div class="flex area-box">
+            <ul class="ul-list flex-equal district">
+                <li data-param="district" data-district="1018">南山区</li>
+                <li data-param="district" data-district="1016">福田区</li>
+                <li data-param="district" data-district="1025">大棚新区</li>
+                <li data-param="district" data-district="1024">光明新区</li>
+                <li data-param="district" data-district="1017">罗湖区</li>
+            </ul>
+            <ul class="ul-list flex-equal flex-hang region hide">
+                <li data-param="region" data-region="10395">西丽</li>
+                <li data-param="region" data-region="10395">深大</li>
+                <li data-param="region" data-region="10395">白石洲</li>
+                <li data-param="region" data-region="10395">世界之窗</li>
+                <li data-param="region" data-region="10395">华侨城</li>
+                <li data-param="region" data-region="10395">大学城</li>
+            </ul>
+        </div>
+    </div>
+    <!-- 商铺类型 -->
+    <div class="shop-type-pop type-pop wh100 bg-fff pt37 pop hide">
+        <div class="top-fixed bg-fff flex align-items-center bb-ddd">
+            <div class="return-icon ml15 close-shop-type"></div><span class="f16 c-333 absolute translateHalf">商铺类型</span></div>
+        <ul class="ul-list">
+            <li class="bb-eee"><a><span class="f14 c-333">购物中心</span></a></li>
+            <li class="bb-eee"><a><span class="f14 c-333">社区商业</span></a></li>
+            <li class="bb-eee"><a><span class="f14 c-333">综合体配套</span></a></li>
+            <li class="bb-eee"><a><span class="f14 c-333">其他</span></a></li>
+        </ul>
+        <button class="submit shop-type-finish">完成</button>
+    </div>
+    <!-- 特色标签 住宅-->
+    <div class="labels-pop wh100 bg-fff pt37 pop hide shop">
+        <div class="top-fixed bg-fff flex align-items-center bb-ddd">
+            <div class="return-icon ml15 close-labels"></div><span class="f16 c-333 absolute translateHalf">特色标签</span></div>
+        <ul class="ul-list">
+            <li class="bb-eee"><a><span class="f14 c-333">沿街旺铺</span></a></li>
+            <li class="bb-eee"><a><span class="f14 c-333">繁华地带</span></a></li>
+            <li class="bb-eee"><a><span class="f14 c-333">专业市场</span></a></li>
+            <li class="bb-eee"><a><span class="f14 c-333">住宅底商</span></a></li>
+            <li class="bb-eee"><a><span class="f14 c-333">综合体配套</span></a></li>
+            <li class="bb-eee"><a><span class="f14 c-333">地铁口附近</span></a></li>
+            <li class="bb-eee"><a><span class="f14 c-333">小面积</span></a></li>
+            <li class="bb-eee"><a><span class="f14 c-333">独栋整层</span></a></li>
+            <li class="bb-eee"><a><span class="f14 c-333">知名商户入驻</span></a></li>
+            <li class="bb-eee"><a><span class="f14 c-333">可分隔办公室</span></a></li>
+        </ul>
+        <button class="submit labels-finish">完成</button>
+    </div>
+    <button class="submit release-sub">提交</button>
+    <script type="text/javascript" src="js/libs/jquery.min.js"></script>
+    <script type="text/javascript" src="js/common/common.js"></script>
+    <script type="text/javascript" src="js/plugins/layer.js"></script>
+    <script type="text/javascript" src="js/views/edit_qiuzu_shop.js"></script>
+</body>
+
+</html>

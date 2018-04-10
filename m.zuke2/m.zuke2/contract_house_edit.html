@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta name="format-detection" content="telephone=no" />
+    <title>【租客网】,租客深圳租房_租房网_深圳租房信息_房屋托管</title>
+    <link rel="stylesheet" type="text/css" href="css/common/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/views/public.css" />
+    <link rel="stylesheet" type="text/css" href="css/plugins/layer.css" />
+</head>
+
+<body class="contract release pt37">
+    <!-- 头部 -->
+    <div class="top-fixed bg-fff flex align-items-center bb-ddd">
+        <a href="javascript:history.go(-1)" class="return-icon ml15"></a>
+        <span class="f16 c-333 absolute translateHalf">编辑住宅合同</span>
+    </div>
+    <!-- big-upload -->
+    <div class="main plr12 ptb12 bb-eee big-upload">
+        <input type="file" accept="image/*" />
+    </div>
+    <div class="main plr12 pt12 small-upload add-upload hide clearfix">
+        <div class="add-img">
+            <input type="file" accept="image/*" />
+        </div>
+    </div>
+    <p class="f14 bold c-333 plr12 pt12">房屋信息</p>
+    <div class="main use-main">
+        <ul class="ul-list house">
+            <li class="bb-eee">
+                <a>
+                    <span class="f14 c-333">小区名称</span>
+                    <span class="flex flex-right align-items-center">
+                        <input class="tright court-name" type="text" placeholder="请输入小区名称" />
+                    </span>
+                </a>
+            </li>
+            <li class="bb-eee">
+                <a>
+                    <span class="f14 c-333">门牌号</span>
+                    <span class="flex flex-right align-items-center">
+                        <input class="tright door-number" type="text" placeholder="X栋X层X号门" />
+                    </span>
+                </a>
+            </li>
+            <li class="bb-eee">
+                <a>
+                    <span class="f14 c-333">地址</span>
+                    <span class="flex flex-right align-items-center">
+                        <input class="tright addr" type="text" placeholder="请填写详细地址" />
+                    </span>
+                </a>
+            </li>
+            <li class="bb-eee">
+                <a>
+                    <span class="f14 c-333">面积</span>
+                    <span class="flex flex-right align-items-center">
+                        <input class="tright square" type="text" placeholder="请填写面积" />
+                        <span class="f14 c-333 ml8">m²</span>
+                    </span>
+                </a>
+            </li>
+            <li class="bb-eee house-type">
+                <a>
+                    <span class="f14 c-333">户型</span>
+                    <span class="flex flex-right align-items-center">
+                        <input class="tcenter house-shi" type="text" />
+                        <span class="f14 c-999">室</span>
+                        <input class="tcenter house-ting" type="text" />
+                        <span class="f14 c-999">厅</span>
+                        <input class="tcenter house-wei" type="text" />
+                        <span class="f14 c-999">卫</span>
+                    </span>
+                </a>
+            </li>
+            <li class="bb-eee">
+                <a class="supporting">
+                    <span class="f14 c-333">配套</span>
+                    <span class="flex flex-right align-items-center">
+                        <span class="f12 c-666">未填写</span>
+                        <span class="next"></span>
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="main plr12 ptb12 bb-eee">
+        <p class="f14 c-333">补充</p>
+        <textarea class="supply-desc pt12" placeholder="请输入补充内容" data-maxWord="800" name="supply-desc"></textarea>
+        <p class="f12 c-999"><span class="shengyu">0</span><span>/800</span></p>
+    </div>
+    <div class="col-f5f5f5"></div>
+    <p class="f14 bold c-333 plr12 pt12">交易信息</p>
+    <div class="main">
+        <ul class="ul-list">
+            <li class="bb-eee">
+                <a>
+                    <span class="f14 c-333">租金</span>
+                    <span class="flex flex-right align-items-center">
+                        <input class="tright rent" type="text" placeholder="请输入租金" />
+                        <span class="f14 c-333 ml8">元/月</span>
+                    </span>
+                </a>
+            </li>
+            <li class="pb0">
+                <a>
+                    <span class="f14 c-333">租期</span>
+                    <span class="flex flex-right align-items-center">
+                        <span class="f14 c-999">从</span>
+                        <input class="tcenter bb-ddd zuqi-start-time" readonly="readonly" type="text" />
+                        <span class="f14 c-999">开始</span>
+                        <span class="f14 c-999 ml20">租</span>
+                        <input class="tcenter bb-ddd zuqi-month" type="text" />
+                        <span class="f14 c-999">个月</span>
+                    </span>
+                </a>
+            </li>
+            <li class="bb-eee">
+                <a>
+                    <span class="flex flex-right align-items-center">
+                        <span class="f14 c-999">于</span>
+                        <input class="tcenter bb-ddd zuqi-end-time" readonly="readonly" type="text" />
+                        <span class="f14 c-999">到期</span>
+                    </span>
+                </a>
+            </li>
+            <li class="bb-eee">
+                <a>
+                    <span class="f14 c-333">每月付租日期</span>
+                    <span class="flex flex-right align-items-center">
+                        <input class="tcenter bb-ddd fuzu-day" type="text" />
+                        <span class="f14 c-999">日</span>
+                    </span>
+                </a>
+            </li>
+            <li class="bb-eee">
+                <div class="main">
+                    <p class="f14 c-333">付租方式</p>
+                    <p class="notes rent-method">
+                        <span class="note active" data-type="月付">月付</span>
+                        <span class="note" data-type="季度付">季度付</span>
+                        <span class="note" data-type="半年付">半年付</span>
+                        <span class="note" data-type="年付">年付</span>
+                    </p>
+                </div>
+            </li>
+            <li class="bb-eee">
+                <a>
+                    <span class="f14 c-333">押金</span>
+                    <span class="flex flex-right align-items-center">
+                        <input class="tright deposit" type="text" />
+                        <span class="f14 c-333">元</span>
+                    </span>
+                </a>
+            </li>
+            <li class="bb-eee">
+                <a>
+                    <span class="f14 c-333">租户违约金</span>
+                    <span class="flex flex-right align-items-center">
+                        <input class="tcenter bb-ddd penalty" type="text" />
+                        <span class="f14 c-333">%</span>
+                        <span class="f14 c-333 ml15">超过付租日</span>
+                        <input class="tcenter bb-ddd penalty-day" type="text" />
+                        <span class="f14 c-333">天起算</span>
+                    </span>
+                </a>
+            </li>
+            <li class="bb-eee">
+                <a>
+                    <span class="f14 c-333">代收物业费</span>
+                    <span class="flex flex-right align-items-center">
+                        <input class="tright property" type="text" />
+                        <span class="f14 c-333">元/月</span>
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="main plr12 ptb12 bb-eee">
+        <p class="f14 c-333">其他费用</p>
+        <textarea class="order-cost pt12" placeholder="请输入其他费用" data-maxWord="800" name="order-cost"></textarea>
+        <p class="f12 c-999"><span class="shengyu">0</span><span>/800</span></p>
+    </div>
+    <div class="col-f5f5f5"></div>
+    <p class="f14 bold c-333 plr12 pt12">租客信息</p>
+    <div class="main">
+        <ul class="ul-list">
+            <li class="bb-eee">
+                <a>
+                    <span class="f14 c-333">租房人姓名</span>
+                    <span class="flex flex-right align-items-center">
+                        <input class="tright renter-name" type="text" placeholder="请填写租房人姓名" />
+                    </span>
+                </a>
+            </li>
+            <li class="bb-eee">
+                <a>
+                    <span class="f14 c-333">联系方式</span>
+                    <span class="flex flex-right align-items-center">
+                        <input class="tright renter-phone" type="text" placeholder="请填写联系方式" />
+                    </span>
+                </a>
+            </li>
+            <li class="bb-eee">
+                <a>
+                    <span class="f14 c-333">身份证号码</span>
+                    <span class="flex flex-right align-items-center">
+                        <input class="tright renter-id" type="text" placeholder="请填写身份证号码" />
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="col-f5f5f5"></div>
+    <p class="f14 bold c-333 plr12 pt12">房东信息</p>
+    <div class="main">
+        <ul class="ul-list">
+            <li class="bb-eee">
+                <a>
+                    <span class="f14 c-333">房东姓名</span>
+                    <span class="flex flex-right align-items-center">
+                        <input class="tright landlord-name" type="text" placeholder="请填写房东姓名" />
+                    </span>
+                </a>
+            </li>
+            <li class="bb-eee">
+                <a>
+                    <span class="f14 c-333">联系方式</span>
+                    <span class="flex flex-right align-items-center">
+                        <input class="tright landlord-phone" type="text" placeholder="请填写联系方式" />
+                    </span>
+                </a>
+            </li>
+            <li class="bb-eee">
+                <a>
+                    <span class="f14 c-333">身份证号码</span>
+                    <span class="flex flex-right align-items-center">
+                        <input class="tright landlord-id" type="text" placeholder="请填写身份证号码" />
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- 配套设施-->
+    <div class="supporting-pop wh100 bg-fff pt37 pop hide">
+        <div class="top-fixed bg-fff flex align-items-center bb-ddd">
+            <div class="return-icon ml15 close-supporting"></div>
+            <span class="f16 c-333 absolute translateHalf">配套设施</span>
+            <span class="add-supporting flex align-items-center flex-right"><i class="icon add-icon"></i><span class="f12 c-333 mr13">添加</span></span>
+        </div>
+        <ul class="ul-list">
+            <li class="bb-eee" name="床">
+                <span class="f14 c-333">床</span>
+                <span class="flex-right mr13 icon shangla-icon"></span>
+            </li>
+            <div class="li-box" name="床">
+                <div class="plr12 pt12 small-upload supporting-upload clearfix">
+                    <div class="add-img">
+                        <input type="file" accept="image/*" />
+                    </div>
+                </div>
+                <p class="flex align-items-center plr12 ptb12">
+                    <span class="f12 c-333">数量</span>
+                    <i class="icon minus-icon"></i>
+                    <span class="num f12 c-333">0</span>
+                    <i class="icon add-icon"></i>
+                </p>
+                <div class="plr12 ptb12 bb-eee">
+                    <p class="f14 c-333">备注</p>
+                    <textarea class="remarks pt12" placeholder="请输入备注" data-maxWord="200" name="remarks"></textarea>
+                    <p class="f12 c-999"><span class="shengyu">0</span><span>/200</span></p>
+                </div>
+            </div>
+            <li class="bb-eee" name="沙发">
+                <span class="f14 c-333">沙发</span>
+                <span class="flex-right mr13 icon xiala-icon"></span>
+            </li>
+            <div class="li-box hide" name="沙发">
+                <div class="plr12 pt12 small-upload supporting-upload clearfix">
+                    <div class="add-img">
+                        <input type="file" accept="image/*" />
+                    </div>
+                </div>
+                <p class="flex align-items-center plr12 ptb12">
+                    <span class="f12 c-333">数量</span>
+                    <i class="icon minus-icon"></i>
+                    <span class="num f12 c-333">0</span>
+                    <i class="icon add-icon"></i>
+                </p>
+                <div class="plr12 ptb12 bb-eee">
+                    <p class="f14 c-333">备注</p>
+                    <textarea class="remarks pt12" placeholder="请输入备注" data-maxWord="200" name="remarks"></textarea>
+                    <p class="f12 c-999"><span class="shengyu">0</span><span>/200</span></p>
+                </div>
+            </div>
+            <li class="bb-eee" name="冰箱">
+                <span class="f14 c-333">冰箱</span>
+                <span class="flex-right mr13 icon xiala-icon"></span>
+            </li>
+            <div class="li-box hide" name="冰箱">
+                <div class="plr12 pt12 small-upload supporting-upload clearfix">
+                    <div class="add-img">
+                        <input type="file" accept="image/*" />
+                    </div>
+                </div>
+                <p class="flex align-items-center plr12 ptb12">
+                    <span class="f12 c-333">数量</span>
+                    <i class="icon minus-icon"></i>
+                    <span class="num f12 c-333">0</span>
+                    <i class="icon add-icon"></i>
+                </p>
+                <div class="plr12 ptb12 bb-eee">
+                    <p class="f14 c-333">备注</p>
+                    <textarea class="remarks pt12" placeholder="请输入备注" data-maxWord="200" name="remarks"></textarea>
+                    <p class="f12 c-999"><span class="shengyu">0</span><span>/200</span></p>
+                </div>
+            </div>
+            <li class="bb-eee" name="空调">
+                <span class="f14 c-333">空调</span>
+                <span class="flex-right mr13 icon xiala-icon"></span>
+            </li>
+            <div class="li-box hide" name="空调">
+                <div class="plr12 pt12 small-upload supporting-upload clearfix">
+                    <div class="add-img">
+                        <input type="file" accept="image/*" />
+                    </div>
+                </div>
+                <p class="flex align-items-center plr12 ptb12">
+                    <span class="f12 c-333">数量</span>
+                    <i class="icon minus-icon"></i>
+                    <span class="num f12 c-333">0</span>
+                    <i class="icon add-icon"></i>
+                </p>
+                <div class="plr12 ptb12 bb-eee">
+                    <p class="f14 c-333">备注</p>
+                    <textarea class="remarks pt12" placeholder="请输入备注" data-maxWord="200" name="remarks"></textarea>
+                    <p class="f12 c-999"><span class="shengyu">0</span><span>/200</span></p>
+                </div>
+            </div>
+            <li class="bb-eee" name="电视">
+                <span class="f14 c-333">电视</span>
+                <span class="flex-right mr13 icon xiala-icon"></span>
+            </li>
+            <div class="li-box hide" name="电视">
+                <div class="plr12 pt12 small-upload supporting-upload clearfix">
+                    <div class="add-img">
+                        <input type="file" accept="image/*" />
+                    </div>
+                </div>
+                <p class="flex align-items-center plr12 ptb12">
+                    <span class="f12 c-333">数量</span>
+                    <i class="icon minus-icon"></i>
+                    <span class="num f12 c-333">0</span>
+                    <i class="icon add-icon"></i>
+                </p>
+                <div class="plr12 ptb12 bb-eee">
+                    <p class="f14 c-333">备注</p>
+                    <textarea class="remarks pt12" placeholder="请输入备注" data-maxWord="200" name="remarks"></textarea>
+                    <p class="f12 c-999"><span class="shengyu">0</span><span>/200</span></p>
+                </div>
+            </div>
+            <li class="bb-eee" name="热水器">
+                <span class="f14 c-333">热水器</span>
+                <span class="flex-right mr13 icon xiala-icon"></span>
+            </li>
+            <div class="li-box hide" name="热水器">
+                <div class="plr12 pt12 small-upload supporting-upload clearfix">
+                    <div class="add-img">
+                        <input type="file" accept="image/*" />
+                    </div>
+                </div>
+                <p class="flex align-items-center plr12 ptb12">
+                    <span class="f12 c-333">数量</span>
+                    <i class="icon minus-icon"></i>
+                    <span class="num f12 c-333">0</span>
+                    <i class="icon add-icon"></i>
+                </p>
+                <div class="plr12 ptb12 bb-eee">
+                    <p class="f14 c-333">备注</p>
+                    <textarea class="remarks pt12" placeholder="请输入备注" data-maxWord="200" name="remarks"></textarea>
+                    <p class="f12 c-999"><span class="shengyu">0</span><span>/200</span></p>
+                </div>
+            </div>
+            <li class="bb-eee" name="洗衣机">
+                <span class="f14 c-333">洗衣机</span>
+                <span class="flex-right mr13 icon xiala-icon"></span>
+            </li>
+            <div class="li-box hide" name="洗衣机">
+                <div class="plr12 pt12 small-upload supporting-upload clearfix">
+                    <div class="add-img">
+                        <input type="file" accept="image/*" />
+                    </div>
+                </div>
+                <p class="flex align-items-center plr12 ptb12">
+                    <span class="f12 c-333">数量</span>
+                    <i class="icon minus-icon"></i>
+                    <span class="num f12 c-333">0</span>
+                    <i class="icon add-icon"></i>
+                </p>
+                <div class="plr12 ptb12 bb-eee">
+                    <p class="f14 c-333">备注</p>
+                    <textarea class="remarks pt12" placeholder="请输入备注" data-maxWord="200" name="remarks"></textarea>
+                    <p class="f12 c-999"><span class="shengyu">0</span><span>/200</span></p>
+                </div>
+            </div>
+            <li class="bb-eee" name="微波炉">
+                <span class="f14 c-333">微波炉</span>
+                <span class="flex-right mr13 icon xiala-icon"></span>
+            </li>
+            <div class="li-box hide" name="微波炉">
+                <div class="plr12 pt12 small-upload supporting-upload clearfix">
+                    <div class="add-img">
+                        <input type="file" accept="image/*" />
+                    </div>
+                </div>
+                <p class="flex align-items-center plr12 ptb12">
+                    <span class="f12 c-333">数量</span>
+                    <i class="icon minus-icon"></i>
+                    <span class="num f12 c-333">0</span>
+                    <i class="icon add-icon"></i>
+                </p>
+                <div class="plr12 ptb12 bb-eee">
+                    <p class="f14 c-333">备注</p>
+                    <textarea class="remarks pt12" placeholder="请输入备注" data-maxWord="200" name="remarks"></textarea>
+                    <p class="f12 c-999"><span class="shengyu">0</span><span>/200</span></p>
+                </div>
+            </div>
+            <li class="bb-eee" name="衣柜">
+                <span class="f14 c-333">衣柜</span>
+                <span class="flex-right mr13 icon xiala-icon"></span>
+            </li>
+            <div class="li-box hide" name="衣柜">
+                <div class="plr12 pt12 small-upload supporting-upload clearfix">
+                    <div class="add-img">
+                        <input type="file" accept="image/*" />
+                    </div>
+                </div>
+                <p class="flex align-items-center plr12 ptb12">
+                    <span class="f12 c-333">数量</span>
+                    <i class="icon minus-icon"></i>
+                    <span class="num f12 c-333">0</span>
+                    <i class="icon add-icon"></i>
+                </p>
+                <div class="plr12 ptb12 bb-eee">
+                    <p class="f14 c-333">备注</p>
+                    <textarea class="remarks pt12" placeholder="请输入备注" data-maxWord="200" name="remarks"></textarea>
+                    <p class="f12 c-999"><span class="shengyu">0</span><span>/200</span></p>
+                </div>
+            </div>
+            <li class="kdai bb-eee">
+                <span class="f14 c-333">宽带</span>
+                <span class="flex flex-right align-items-center h20 kdai-radio-box">
+                    <span class="radio-box">
+                        <input type="radio" id="have" name="kdai" value="1" checked="checked">
+                        <label for="have"></label>
+                    </span>
+                <label for="have" class="f12 c-333 ml8">有</label>
+                <span class="radio-box ml20">
+                        <input type="radio" id="not-have" name="kdai" value="0">
+                        <label for="not-have"></label>
+                    </span>
+                <label for="not-have" class="f12 c-333 ml8">无</label>
+                </span>
+            </li>
+        </ul>
+        <button class="submit supporting-finish mt10">确定</button>
+    </div>
+    <!-- 裁剪 -->
+    <div class="clip-pop bg-fff wh100 pt37 pop hide">
+        <div class="top-fixed flex align-items-center">
+            <div class="cross-bed-icon ml15 close-clip"></div>
+            <span class="f16 c-fff absolute translateHalf">裁剪</span>
+            <i class="flex-right icon confirm mr13"></i>
+        </div>
+        <div id="clipArea" class="clip-area"></div>
+    </div>
+    <button class="submit contract-sub">确定</button>
+    <script type="text/javascript" src="js/libs/jquery.min.js"></script>
+    <script type="text/javascript" src="js/common/common.js"></script>
+    <script type="text/javascript" src="js/plugins/layer.js"></script>
+    <script type="text/javascript" src="js/plugins/hammer.min.js"></script>
+    <script type="text/javascript" src="js/plugins/iscroll-zoom-min.js"></script>
+    <script type="text/javascript" src="js/plugins/lrz.all.bundle.min.js"></script>
+    <script type="text/javascript" src="js/plugins/photoClip.min.js"></script>
+    <script type="text/javascript" src="js/plugins/datePicker.min.js"></script>
+    <script type="text/javascript" src="js/views/contract_house_edit.js"></script>
+</body>
+
+</html>

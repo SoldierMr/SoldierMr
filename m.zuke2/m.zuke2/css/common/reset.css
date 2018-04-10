@@ -1,0 +1,81 @@
+@charset "utf-8";
+/* @font-face {
+	font-family: "PingFang Medium";
+	src: url("../../fonts/PingFangMedium/PingFangMedium.woff2") format("woff2"),
+ 		url("../../fonts/PingFangMedium/PingFangMedium.ttf") format("truetype"),
+ 		url("../../fonts/PingFangMedium/PingFangMedium.eot") format("embedded-opentype"),
+ 		url("../../fonts/PingFangMedium/PingFangMedium.svg") format("svg");
+ 	font-weight: normal;
+ 	font-style: normal;
+} */
+/*
+移动端 CSS Reset
+基数为125%*16px = 20px；1rem = 20px；
+ */
+html { font-size: 20px; font-family: PingFang Medium, "Microsoft YaHei", "PingFang SC", Arial, "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -webkit-font-smoothing: antialiased; webkit-overflow-scrolling: touch; }
+body { word-break: break-all; }
+* {  -webkit-box-sizing: border-box; box-sizing: border-box; }
+/* 清除内外边距 */
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, /* 结构元素 */
+dl, dt, dd, ul, ol, li, /* 列表元素 */
+pre, /* 文本格式元素 */
+fieldset, button, input, textarea, /* 表单元素 */
+th, td { /* 表格元素 */
+    margin: 0; padding: 0;
+}
+img[src='']{ visibility: hidden; display: inline-block; }
+table { border-collapse: collapse; border-spacing: 0; } /* 重置表格元素 */
+ul, ol { list-style: none; } /* 重置列表元素 */
+fieldset,
+img, /* img：让链接里的 img 无边框 */
+button,
+textarea,
+input { border: none; }
+input[type=button],
+input[type=submit],
+input[type=file],
+input[type="text"],
+input[type="password"],
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration,
+input:focus,
+textarea:focus,
+button:focus,
+button { -webkit-appearance: none; appearance: none; outline: none; -webkit-tap-highlight-color: rgba(0,0,0,0); }
+/*button、input、label等点击时会出现阴影背景*/
+button:hover,
+input:focus,
+label:hover,
+div:hover,
+span:hover { -webkit-tap-highlight-color: transparent; }
+/*输入框placeholder的颜色*/
+input:-ms-input-placeholder{ color: #999; }
+input::-webkit-input-placeholder{ color: #999; }
+/*a标签出现阴影*/
+a { cursor: pointer; -webkit-tap-highlight-color: transparent; text-decoration: none; outline: none; }
+a:link, a:visited, a:hover, a:active { text-decoration: none; }
+/*html5*/
+article,aside,dialog,footer,header,section,footer,nav,figure,menu { display: block }
+/* 清除浮动 clearfix */
+.left { float: left; }
+.right { float: right; }
+.clearfix:before,
+.clearfix:after { content: ""; display: table; clear: both; overflow: hidden; }
+.clearfix { zoom: 1; }
+/*隐藏*/
+.hide { display: none; }
+.show { display: block; }
+/*适配*/
+@media only screen and (max-width: 320px) { html { font-size: 20px; } }
+@media only screen and (min-width: 321px) and ( max-width: 351px) { html { font-size: 21px; } }/*336*/
+@media only screen and (min-width: 352px) and ( max-width: 383px) { html { font-size: 23px; } }/*368*/
+@media only screen and (min-width: 384px) and ( max-width: 415px) { html { font-size: 25px; } }/*400*/
+@media only screen and (min-width: 416px) and ( max-width: 447px) { html { font-size: 27px; } }/*432*/
+@media only screen and (min-width: 448px) and ( max-width: 479px) { html { font-size: 29px; } }/*464*/
+@media only screen and (min-width: 480px) and ( max-width: 511px) { html { font-size: 31px; } }/*496*/
+@media only screen and (min-width: 512px) and ( max-width: 543px) { html { font-size: 33px; } }/*528*/
+@media only screen and (min-width: 544px) and ( max-width: 575px) { html { font-size: 35px; } }/*560*/
+@media only screen and (min-width: 576px) and ( max-width: 607px) { html { font-size: 37px; } }/*592*/
+@media only screen and (min-width: 608px) and ( max-width: 639px) { html { font-size: 39px; } }/*624*/
+@media only screen and (min-width: 640px) { html { font-size: 40px; } }
+@media only screen and (min-width: 769px) { html { font-size: 26px; } }

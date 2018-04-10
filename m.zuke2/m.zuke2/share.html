@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta name="format-detection" content="telephone=no" />
+    <title>【租客网】,租客深圳租房_租房网_深圳租房信息_房屋托管</title>
+    <link rel="stylesheet" type="text/css" href="css/common/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/views/public.css" />
+    <link rel="stylesheet" type="text/css" href="css/plugins/swiper.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/plugins/layer.css" />
+</head>
+
+<body class="share">
+    <!-- 头部 -->
+    <div class="top-fixed bg-fff flex align-items-center bb-ddd">
+        <div class="zuke-txt"></div>
+        <a href="select_city.html" class="block city">深圳</a>
+        <div class="short-search-box flex align-items-center ml35 bg-eee box-sizing show-search-pop">
+            <input class="f12" type="text" placeholder="你想住哪？" readonly="readonly" />
+            <span class="search-fade-icon ml8"></span>
+        </div>
+    </div>
+    <div class="main plr12">
+        <div class="zuke-logo"></div>
+        <!-- 已登录 -->
+        <div class="hide">
+            <p class="referral-code f12"><span>推荐码：</span><span class="num">123456</span></p>
+            <div class="sharing">
+                <div class="avatar"><img src="http://img1.imgtn.bdimg.com/it/u=1459967254,1708141755&fm=27&gp=0.jpg" alt="头像" /></div>
+                <p class="f12"><span class="c-333">来自</span><span class="c-3fabfa">金城武</span><span class="c-333">的分享</span></p>
+            </div>
+            <p class="f12 c-333 tcenter"><span>已赚 </span><span class="f16 c-ff711c">450</span><span> 积分</span></p>
+            <div class="share-qr flex-all-center">
+                <img src="https://qr.api.cli.im/qr?data=https%253A%252F%252Fwww.baidu.com%252F&level=H&transparent=false&bgcolor=%23ffffff&forecolor=%23000000&blockpixel=12&marginblock=1&logourl=&size=280&kid=cliim&key=0e6110544d5d1765f8be79ac5a919d40" alt="分享二维码" />
+            </div>
+            <button class="share-btn">分享</button>
+        </div>
+        <!-- 未登录 -->
+        <div class="not-log">
+            <a href="login.html" class="goto-log">立即登录分享</a>
+        </div>
+        <div class="dynamic-box flex">
+            <span class="f14 c-333">动态</span>
+            <div class="dynamic flex-equal flex-hang">
+                <p class="flex f12">
+                    <span class="c-3fabfa">不拘的风</span>
+                    <span class="flex-equal"><span class="c-333">通过微信分享赚取</span><span class="c-ff711c">100</span><span class="c-333">积分</span></span>
+                    <span class="flex-right c-999">2分钟前</span>
+                </p>
+                <p class="flex f12">
+                    <span class="c-3fabfa">不拘的风</span>
+                    <span class="flex-equal"><span class="c-333">通过QQ分享赚取</span><span class="c-ff711c">10</span><span class="c-333">积分</span></span>
+                    <span class="flex-right c-999">5分钟前</span>
+                </p>
+                <p class="flex f12">
+                    <span class="c-3fabfa">不拘的风</span>
+                    <span class="flex-equal"><span class="c-333">通过微博分享赚取</span><span class="c-ff711c">15</span><span class="c-333">积分</span></span>
+                    <span class="flex-right c-999">16分钟前</span>
+                </p>
+                <p class="flex f12">
+                    <span class="c-3fabfa">不拘的风</span>
+                    <span class="flex-equal"><span class="c-333">通过QQ空间分享赚取</span><span class="c-ff711c">30</span><span class="c-333">积分</span></span>
+                    <span class="flex-right c-999">48分钟前</span>
+                </p>
+                <p class="flex f12">
+                    <span class="c-3fabfa">不拘的风</span>
+                    <span class="flex-equal"><span class="c-333">通过微信好友分享赚取</span><span class="c-ff711c">100</span><span class="c-333">积分</span></span>
+                    <span class="flex-right c-999">1小时前</span>
+                </p>
+            </div>
+            <div class="more translateLeftHalf hide">查看更多</div>
+        </div>
+        <div class="close hide">关闭</div>
+    </div>
+    <div class="bottom-fixed bg-fff flex bt-ddd">
+        <a href="home.html" class="flex-all-center flex-equal"><i class="icon home-icon"></i><span>首页</span></a>
+        <a href="" class="flex-all-center flex-equal"><i class="icon map-icon"></i><span>地图找房</span></a>
+        <a class="fabu flex-all-center flex-equal"><i class="icon fabu-icon"></i></a>
+        <a class="flex-all-center flex-equal active"><i class="icon share-active-icon"></i><span>分享</span></a>
+        <a href="renter.html" class="flex-all-center flex-equal"><i class="icon my-icon"></i><span>我的</span></a>
+    </div>
+    <!-- 搜索弹出 -->
+    <div class="search-pop wh100 bg-fff pt37 box-sizing hide">
+        <div class="top-fixed bg-fff flex align-items-center bb-ddd">
+            <div class="return-icon ml15 close-search"></div>
+            <div class="long-search-box flex align-items-center ml25 bg-eee box-sizing">
+                <input class="search-val f12" type="text" placeholder="请输入搜索关键字" />
+                <span class="search-fade-icon ml8 search-btn"></span>
+            </div>
+        </div>
+        <p class="f14 c-333">热门搜索</p>
+        <div class="hot-labels clearfix">
+            <a href="" class="hot-label">翠海花园</a>
+            <a href="" class="hot-label">翠海海花园</a>
+            <a href="" class="hot-label">翠翠海海花园</a>
+            <a href="" class="hot-label">翠海花园</a>
+            <a href="" class="hot-label">翠海花园</a>
+        </div>
+        <p class="f14 c-333">搜索历史</p>
+        <ul class="history-ul"></ul>
+        <p class="empty-history middle hide"><i class="icon empty-history-icon"></i><span class="f14 c-666">清空搜索历史</span></p>
+        <p class="f14 c-666 tcenter no-history">暂无搜索历史</p>
+    </div>
+    <!-- 发布弹出 -->
+    <div class="fabu-pop wh100 bg-fff box-sizing hide">
+        <div class="weather-box translateLeftHalf tcenter">
+            <hr />
+            <p class="f16 c-666">早上好</p>
+            <p class="f16 c-666">Morning</p>
+            <hr />
+            <p class="f16 c-666 vertical-top"><span class="f12 c-666 left">深圳</span><span class="f12 c-666">晴</span><span class="f12 c-666 right">26°C</span></p>
+        </div>
+        <a href="release_qiuzu.html" class="fabu-info fabu-qiuzu translateLeftHalf flex-all-center opacity1">
+            <i class="icon"></i>
+            <span class="f16 c-333">发布求租信息</span>
+        </a>
+        <a href="release_house.html" class="fabu-info fabu-zufang translateLeftHalf flex-all-center opacity1">
+            <i class="icon"></i>
+            <span class="f16 c-333">发布租房信息</span>
+        </a>
+        <div class="close-fabu translateLeftHalf bg-fff bt-ddd flex-all-center">
+            <i class="icon"></i>
+        </div>
+    </div>
+    <div class="share-pop-bg hide">
+        <div class="share-pop">
+            <p class="ptb12 tcenter f14 c-333">分享到</p>
+            <div class="share-groups">
+                <div class="share-group space-between">
+                    <div class="share-item weixin" data-site="weixin">
+                        <span class="share-item-icon share-weixin-icon"></span>
+                        <span class="share-item-text">微信好友</span>
+                    </div>
+                    <div class="share-item weixintimeline" data-site="weixintimeline">
+                        <span class="share-item-icon share-weixintimeline-icon"></span>
+                        <span class="share-item-text">朋友圈</span>
+                    </div>
+                    <div class="share-item qq" data-site="qq">
+                        <span class="share-item-icon share-qq-icon"></span>
+                        <span class="share-item-text">QQ好友</span>
+                    </div>
+                </div>
+                <div class="share-group space-between">
+                    <div class="share-item qzone" data-site="qzone">
+                        <span class="share-item-icon share-qzone-icon"></span>
+                        <span class="share-item-text">QQ空间</span>
+                    </div>
+                    <div class="share-item weibo" data-site="weibo">
+                        <span class="share-item-icon share-weibo-icon"></span>
+                        <span class="share-item-text">微博</span>
+                    </div>
+                    <div class="share-item"></div>
+                </div>
+            </div>
+            <div class="share-cancel">取消</div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/libs/jquery.min.js"></script>
+    <script type="text/javascript" src="js/plugins/swiper-jquery.min.js"></script>
+    <script type="text/javascript" src="js/common/common.js"></script>
+    <script type="text/javascript" src="js/plugins/layer.js"></script>
+    <script type="text/javascript" src="js/views/share.js"></script>
+</body>
+
+</html>

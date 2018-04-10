@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta name="format-detection" content="telephone=no" />
+    <title>【租客网】,租客深圳租房_租房网_深圳租房信息_房屋托管</title>
+    <link rel="stylesheet" type="text/css" href="css/common/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/views/public.css" />
+    <link rel="stylesheet" type="text/css" href="css/plugins/layer.css" />
+</head>
+
+<body class="pay-rent pt37">
+    <!-- 头部 -->
+    <div class="top-fixed bg-fff flex align-items-center bb-ddd">
+        <a href="javascript:history.go(-1)" class="return-icon ml15"></a>
+        <span class="f16 c-333 absolute translateHalf">付租</span>
+    </div>
+    <div class="main house-main">
+        <a href="house_details.html" class="list-item plr12">
+            <div class="list-img">
+                <img src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3720393058,1997690162&amp;fm=27&amp;gp=0.jpg" alt="房源图片">
+            </div>
+            <div class="list-info flex-equal">
+                <p class="f14 c-333 twoEllipsis">新一代国际豪华公寓新一代国际豪华公寓新一代国际豪华公寓</p>
+                <p class="c-ff5555 f14 flex-bottom">3200元/月</p>
+            </div>
+        </a>
+    </div>
+    <ul class="ul-list">
+        <li class="bb-eee">
+            <span class="f14 c-333">开始时间</span>
+            <span class="flex flex-right align-items-center">
+                <input class="tright start-time" type="text" placeholder="请选择开始时间" readonly="readonly">
+            </span>
+        </li>
+        <li class="bb-eee">
+            <span class="f14 c-333">支付月份</span>
+            <span class="flex flex-right align-items-center">
+                <i class="icon minus-icon"></i>
+                <span class="num f12 c-333">1</span>
+            <i class="icon add-icon"></i>
+            </span>
+        </li>
+        <li class="bb-eee coupon">
+            <span class="f14 c-333">租金券</span>
+            <span class="flex flex-right align-items-center">
+                <span class="usable-span">一个可用</span>
+                <span class="f14 c-ff5555 hide"><span>-</span><span class="discount"></span><span>元</span></span>
+                <span class="next"></span>
+            </span>
+        </li>
+        <li class="bb-eee">
+            <span class="f14 c-333">收款方</span>
+            <span class="flex-right f12 c-333">张三</span>
+        </li>
+    </ul>
+    <div class="bottom-fixed bg-fff flex">
+        <div class="flex flex-equal plr12">
+            <p class="flex flex-right align-items-center">
+                <span class="f14 c-666">合计</span>
+                <span class="ml15 f12 c-ff5555">￥</span>
+                <span class="rent f18 c-ff5555" data-rent="3452.00">3452.00</span>
+            </p>
+        </div>
+        <div class="pay-btn">立即支付</div>
+    </div>
+    <div class="coupon-pop wh100 bg-fff pt37 pop hide pb40">
+        <div class="top-fixed bg-fff flex align-items-center bb-ddd">
+            <div class="return-icon ml15 close-coupon"></div>
+            <span class="f16 c-333 absolute translateHalf">选择租金券</span>
+        </div>
+        <div class="ptb12">
+            <div class="coupon-box">
+                <div class="coupon-left">
+                    <span class="f18 c-ff5555 bold mb4">10元</span>
+                    <span class="f12"><span class="c-333">有效期至：</span><span class="c-3fabfa">2017-12-25</span></span>
+                </div>
+                <div class="coupon-right">
+                    <span class="radio-box">
+                        <input type="radio" id="coupon1" name="coupon" data-rent="10">
+                        <label for="coupon1"></label>
+                    </span>
+                </div>
+                <div class="left-semi-circle"></div>
+                <div class="right-semi-circle"></div>
+            </div>
+            <div class="coupon-box">
+                <div class="coupon-left">
+                    <span class="f18 c-ff5555 bold mb4">30元</span>
+                    <span class="f12"><span class="c-333">有效期至：</span><span class="c-3fabfa">2017-12-25</span></span>
+                </div>
+                <div class="coupon-right">
+                    <span class="radio-box">
+                        <input type="radio" id="coupon2" name="coupon" data-rent="30">
+                        <label for="coupon2"></label>
+                    </span>
+                </div>
+                <div class="left-semi-circle"></div>
+                <div class="right-semi-circle"></div>
+            </div>
+        </div>
+        <div class="confirm-coupon">确定</div>
+    </div>
+    <script type="text/javascript" src="js/libs/jquery.min.js"></script>
+    <script type="text/javascript" src="js/common/common.js"></script>
+    <script type="text/javascript" src="js/plugins/datePicker.min.js"></script>
+    <script type="text/javascript" src="js/plugins/layer.js"></script>
+    <script type="text/javascript" src="js/views/pay_rent.js"></script>
+</body>
+
+</html>
